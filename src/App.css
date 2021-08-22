@@ -1,38 +1,42 @@
-.App {
-  text-align: center;
+body {
+    background-color: #15458f;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.default-bg {
+    background-color: #2a518c;
+    padding-bottom: 15px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header-text {
+    color: #a3c4f7;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.link-about {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    display: block;
 }
 
-.App-link {
-  color: #61dafb;
+.link-about:hover {
+    color: white;
+    text-decoration: underline;
+    animation-name: socials;
+    animation-duration: 0.5s;
+    animation-direction: alternate;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.about {
+    text-align: justify;
+}
+
+@keyframes socials {
+    from {
+        margin-left: 0;
+    }
+
+    to {
+        margin-left: 20px;
+    }
 }
